@@ -1,0 +1,790 @@
+{
+  "id": "877581dd-cbfb-4d4d-b03a-cbd41f4ca579",
+  "version": "2.0",
+  "name": "nuevowevo",
+  "url": "https://nuevowevo.com",
+  "tests": [{
+    "id": "c74a1e83-61db-4e31-8861-b828d3c49b98",
+    "name": "agregar-carrito",
+    "commands": [{
+      "id": "7506c29f-aa6a-4210-9295-895120b3b6d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4f8ff08-173b-4ea9-9c37-cc06554a950b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee280595-fc48-4d48-a50b-8a7d06b08d23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.products:nth-child(1) > .product:nth-child(1) .attachment-woocommerce_thumbnail",
+      "targets": [
+        ["css=.products:nth-child(1) > .product:nth-child(1) .attachment-woocommerce_thumbnail", "css:finder"],
+        ["xpath=//img[contains(@src,'https://nuevowevo.com/wp-content/uploads/2023/11/gsc_121364009_1886774_3-300x300.jpeg')]", "xpath:img"],
+        ["xpath=//article[@id='post-222939']/div/div/div/div[2]/div/div/div[2]/div/ul/li/a/span[2]/img", "xpath:idRelative"],
+        ["xpath=//span[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c573b37-ba37-4b5f-82a8-80bb9720972c",
+      "comment": "",
+      "command": "click",
+      "target": "name=add-to-cart",
+      "targets": [
+        ["name=add-to-cart", "name"],
+        ["css=.single_add_to_cart_button", "css:finder"],
+        ["xpath=//button[@name='add-to-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div[3]/div/div/div/div[2]/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Añadir al carrito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d9b6b137-12e9-413a-bcc5-1a567f0da303",
+    "name": "elimina-del-carrito",
+    "commands": [{
+      "id": "61ae17a7-95f9-4623-bda7-69cc0d8ab1d3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bec145f-3249-4c8b-adb8-a0a39bcf3b95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2186fb7b-d8ea-4aca-873c-182ac4c97660",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d7ba8c3-7f25-4f76-b241-c25cfdf54839",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fas",
+      "targets": [
+        ["css=.fas", "css:finder"],
+        ["xpath=//div[@id='carrito']/div/h2/a/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9a305e8-4334-4d13-ae9c-1bfdc0e9f76a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.et_pb_section:nth-child(1) .remove:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//article[@id='post-13']/div/div/div/div/div/div/div[3]/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/cart/?remove_item=a064abbf1acbc5bc8b9fa56d3e8c2b91&_wpnonce=2ddb699f1e')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b7937fa-d5e7-4283-9323-90976ab58daf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.et_pb_section:nth-child(1) .remove:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//article[@id='post-13']/div/div/div/div/div/div/div[3]/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/cart/?remove_item=a064abbf1acbc5bc8b9fa56d3e8c2b91&_wpnonce=2ddb699f1e')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b30d047-7041-4a76-938c-e294f45e5494",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.et_pb_section:nth-child(1) .remove:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//article[@id='post-13']/div/div/div/div/div/div/div[3]/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/cart/?remove_item=a064abbf1acbc5bc8b9fa56d3e8c2b91&_wpnonce=2ddb699f1e')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6ac6e594-ab2e-4e31-82d7-6e7834c4f011",
+    "name": "buscar",
+    "commands": [{
+      "id": "ead3cfe8-da46-4c0c-965b-71278bcc4c28",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e48103d-5d5e-44ab-975d-29fb2f4f8627",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "811ed843-fe26-42d8-b5f4-f7a015a18bae",
+      "comment": "",
+      "command": "click",
+      "target": "id=dgwt-wcas-search-input-1",
+      "targets": [
+        ["id=dgwt-wcas-search-input-1", "id"],
+        ["name=s", "name"],
+        ["css=#dgwt-wcas-search-input-1", "css:finder"],
+        ["xpath=//input[@id='dgwt-wcas-search-input-1']", "xpath:attributes"],
+        ["xpath=//div[@id='et-boc']/header/div/div/div/div[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fce20f1-d28f-4d99-ba72-04a58def7f6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=dgwt-wcas-search-input-1",
+      "targets": [
+        ["id=dgwt-wcas-search-input-1", "id"],
+        ["name=s", "name"],
+        ["css=#dgwt-wcas-search-input-1", "css:finder"],
+        ["xpath=//input[@id='dgwt-wcas-search-input-1']", "xpath:attributes"],
+        ["xpath=//div[@id='et-boc']/header/div/div/div/div[2]/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "combo gamer"
+    }, {
+      "id": "56211007-4b87-4935-b60b-5801bce71bf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dgwt-wcas-active .dgwt-wcas-search-submit",
+      "targets": [
+        ["css=.dgwt-wcas-active .dgwt-wcas-search-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='et-boc']/header/div/div/div/div[2]/div/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fc0060fd-3d7e-47ec-ad03-3ca463de537b",
+    "name": "torre",
+    "commands": [{
+      "id": "77684efc-de18-49c2-b92b-b0726af9e90c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0836e6ee-5709-45f8-b22f-d27e7cac1e8c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e45d840-b75a-4987-85d4-cd2f6f75c615",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Torres",
+      "targets": [
+        ["linkText=Torres", "linkText"],
+        ["css=#menu-principal > #menu-item-234371 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Torres')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-234371']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/torres/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Torres')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d6e63745-8ed9-48fb-8845-dda858cbd122",
+    "name": "portatiles",
+    "commands": [{
+      "id": "aebf92b0-12c0-4ad8-983e-b0cfb7f1e661",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b682cfb1-4aa2-4fdb-bd3b-0a9301449efe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9732ba9a-cca0-4ecd-a314-50aa7329b819",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Portátiles",
+      "targets": [
+        ["linkText=Portátiles", "linkText"],
+        ["css=#menu-principal > #menu-item-234369 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Portátiles')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-234369']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/portatiles/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Portátiles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "91c1ad5d-72db-4717-9d55-3be3364bfd50",
+    "name": "monitores",
+    "commands": [{
+      "id": "96672daf-0c27-4521-a3ae-e20b4a661e5e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6342404-7b4b-42c3-a13b-fac04873d677",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e349348-6ee5-44e9-bba0-7996adc91c65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Monitores",
+      "targets": [
+        ["linkText=Monitores", "linkText"],
+        ["css=#menu-principal > #menu-item-234370 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Monitores')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-234370']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/monitores/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Monitores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2225780b-3613-42d0-9179-cb359111f307",
+    "name": "perifericos",
+    "commands": [{
+      "id": "656e4f50-fcd7-4a41-9c05-c1b0e78c998e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33dc2128-a6e8-40bb-937d-26de71196180",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7696c4f-1234-4703-a7dd-c01b6e4adcac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Perifericos",
+      "targets": [
+        ["linkText=Perifericos", "linkText"],
+        ["css=#menu-principal > #menu-item-234372 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Perifericos')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-234372']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/perifericos/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Perifericos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1f53612d-c6df-4fb2-a0d0-bb541140d599",
+    "name": "pcPartes",
+    "commands": [{
+      "id": "039508fd-e88a-417f-b49d-d81f41fae2b7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a740bc3-f27b-4771-aa28-a5e6ca7e65fe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75d5c237-74ea-4d2e-ae41-9b08c210fb4b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PC Partes",
+      "targets": [
+        ["linkText=PC Partes", "linkText"],
+        ["css=#menu-principal > #menu-item-234782 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PC Partes')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-234782']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/pc-partes/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PC Partes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f64e2394-065f-4148-a8f5-ae152981bdc1",
+    "name": "descuentos",
+    "commands": [{
+      "id": "1f4dfb2d-18d9-4bea-8d6c-13d7018a16be",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b74ada3-0af0-4a42-878e-1820172fdbad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d40e2d78-9cb2-45f3-9b61-986373f833f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-principal > #menu-item-227472 .rainbow",
+      "targets": [
+        ["css=#menu-principal > #menu-item-227472 .rainbow", "css:finder"],
+        ["xpath=//li[@id='menu-item-227472']/a/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'DESCUENTOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "12665939-b11d-4652-a61f-e6aa9538531d",
+    "name": "wevo-apple",
+    "commands": [{
+      "id": "3777d797-a38a-4423-9648-8985730abf90",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ba08e0b-dae3-4f0e-b392-b5f35b82ce3c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41262dcf-3b54-4f75-882e-a1da9c905da4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=iWevo – Apple",
+      "targets": [
+        ["linkText=iWevo – Apple", "linkText"],
+        ["css=#menu-principal > #menu-item-234688 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'iWevo – Apple')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-234688']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://nuevowevo.com/iwevo_apple/')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'iWevo – Apple')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4072c8ca-6a4d-41fa-a9fd-1275bb0c9c68",
+    "name": "wevo-apple-iphone",
+    "commands": []
+  }, {
+    "id": "0cd4bfbf-377c-494a-a9ac-da20a39c37a0",
+    "name": "tiktok",
+    "commands": [{
+      "id": "53925619-577e-41c4-8e44-34d9854a19f6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb70d89a-434f-44b8-a1eb-71d73c197618",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d11c9f63-5ec1-4135-8e99-e981207f008e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_code_0_tb_footer .column:nth-child(4) img",
+      "targets": [
+        ["css=.et_pb_code_0_tb_footer .column:nth-child(4) img", "css:finder"],
+        ["xpath=(//img[@alt='Mountains'])[2]", "xpath:img"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div[3]/div/div/div/div[4]/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dbb66457-21e7-4e96-8653-376c5a4eacfe",
+    "name": "whatsapp",
+    "commands": [{
+      "id": "db9faf2a-cbbd-4ca1-a247-9d606a385e20",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dc47e00-32c5-4b8d-a781-99b87879c6c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b29db13-0b98-4f36-84fd-232e43846b74",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de5f1bfa-9d32-4d94-94ce-0efd8643f00a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_code_0_tb_footer .column:nth-child(3) img",
+      "targets": [
+        ["css=.et_pb_code_0_tb_footer .column:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@alt='Mountains']", "xpath:img"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div[3]/div/div/div/div[3]/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dfb4a033-602e-4304-b227-0774188aa266",
+    "name": "ig",
+    "commands": [{
+      "id": "406eac5b-1a09-435c-90bd-1520d39f460c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c906ee08-9779-4222-a2ef-eeb188d57aca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dec3ea3f-f22b-488b-a339-0c5fd7ba642d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_code_0_tb_footer .column:nth-child(2) img",
+      "targets": [
+        ["css=.et_pb_code_0_tb_footer .column:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='Forest']", "xpath:img"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div[3]/div/div/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2912429d-ad48-4ec9-8d68-21096f2a5c94",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(3) .\\_aagw",
+      "targets": [
+        ["css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(3) .\\_aagw", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_XJ']/div/div/div[2]/div/div/div/div[2]/section/main/div/div[3]/article/div/div/div/div[3]/a/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fcf212c-ad83-426e-97ff-0b4202f7cf9b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(3) .\\_aagw",
+      "targets": [
+        ["css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(3) .\\_aagw", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_XJ']/div/div/div[2]/div/div/div/div[2]/section/main/div/div[3]/article/div/div/div/div[3]/a/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca98be5-f4d3-46cf-9ed0-1db59e50034e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(2) .\\_aagw",
+      "targets": [
+        ["css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(2) .\\_aagw", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_XJ']/div/div/div[2]/div/div/div/div[2]/section/main/div/div[3]/article/div/div/div/div[2]/a/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4b22b64-e8c3-47bd-8029-5e33cd29fbfc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(2) .\\_aagw",
+      "targets": [
+        ["css=.\\_ac7v:nth-child(1) > .\\_aabd:nth-child(2) .\\_aagw", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_XJ']/div/div/div[2]/div/div/div/div[2]/section/main/div/div[3]/article/div/div/div/div[2]/a/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2d5ad9a0-adca-44a9-8865-3b2dad19da46",
+    "name": "facebook",
+    "commands": [{
+      "id": "4bd763cd-a716-4a65-bd8c-eef173d91fdd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fcbfe4b-8c76-43c1-9c44-36e51201c73f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52edb98a-2950-4930-a040-65e8bba21e20",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fb253b1-c577-4969-b85f-dc4a70a7f337",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_code_0_tb_footer .column:nth-child(1) img",
+      "targets": [
+        ["css=.et_pb_code_0_tb_footer .column:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Snow']", "xpath:img"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div[3]/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4fac72b0-36fa-4530-ab27-aa070ea3c8d4",
+    "name": "terminosYcondiciones",
+    "commands": [{
+      "id": "0de90b36-5f53-43f2-b64f-efaaa987da02",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c062d6c5-3e81-44a2-8daa-50ce8251c710",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c4816f5-1364-4ff6-a3aa-23746360958a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_text_0_tb_footer p",
+      "targets": [
+        ["css=.et_pb_text_0_tb_footer p", "css:finder"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//footer/div/div/div/div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Términos y condiciones')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d7caed1f-b3a3-4ac3-acc8-920c644895e6",
+    "name": "privacidad",
+    "commands": [{
+      "id": "de6ea764-9ec3-4158-8339-9cfe1ee7d2ce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa35fc6d-4611-4c18-9ce1-05eeea6941f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "722312c6-1cd3-4549-87f6-b757418d1571",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78b5b89d-0105-4184-9925-d22aa1eb39c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_text_1_tb_footer p",
+      "targets": [
+        ["css=.et_pb_text_1_tb_footer p", "css:finder"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Política de privacidad')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "526ef5f2-c8d9-4ebf-b5f2-b89b764a4372",
+    "name": "envios",
+    "commands": [{
+      "id": "41ab19c7-9fc0-43f7-af56-6311a91b83aa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c192bbe-0db5-4927-87bf-99530c2cc90c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97b71923-e8a6-47c5-8c1c-5c70d2fca686",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_text_2_tb_footer p",
+      "targets": [
+        ["css=.et_pb_text_2_tb_footer p", "css:finder"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div/div[3]/div/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Política de Envíos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8f076583-7cd6-459c-a788-631d734a5055",
+    "name": "PQR’S",
+    "commands": [{
+      "id": "cc6826c8-40a1-4fbe-b644-62ae9cae8c56",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4a39be2-7fa5-4009-871f-624f475559d5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1c23d51-aa92-430e-bbb4-5857e6a42bcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_text_3_tb_footer p",
+      "targets": [
+        ["css=.et_pb_text_3_tb_footer p", "css:finder"],
+        ["xpath=//div[@id='et-main-area']/footer/div/div/div/div/div[4]/div/p", "xpath:idRelative"],
+        ["xpath=//footer/div/div/div/div/div[4]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'PQR’S')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b2ea7c10-d048-4681-97be-dfe091c9afff",
+    "name": "encabezado",
+    "commands": [{
+      "id": "b937d00b-33fa-42c4-9cd7-d754d097556a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7729ea44-a5e8-46f0-b575-117bff412b2a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35809f86-8dfd-4a11-a960-bc2129cb145f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et-pb-arrow-next",
+      "targets": [
+        ["css=.et-pb-arrow-next", "css:finder"],
+        ["xpath=//article[@id='post-222939']/div/div/div/div/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73ffd271-65ec-4adc-88db-13e914df0fb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et-pb-arrow-next",
+      "targets": [
+        ["css=.et-pb-arrow-next", "css:finder"],
+        ["xpath=//article[@id='post-222939']/div/div/div/div/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f1f8da-3ac7-4e15-a663-a805843c2856",
+      "comment": "",
+      "command": "click",
+      "target": "css=.et_pb_slide_2 .et_pb_slide_description",
+      "targets": [
+        ["css=.et_pb_slide_2 .et_pb_slide_description", "css:finder"],
+        ["xpath=//article[@id='post-222939']/div/div/div/div/div/div/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7af72421-5cca-4dea-9abb-9053eec8ae67",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c74a1e83-61db-4e31-8861-b828d3c49b98"]
+  }],
+  "urls": ["https://nuevowevo.com/"],
+  "plugins": []
+}
